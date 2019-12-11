@@ -1,1 +1,1 @@
-Faire un printf, doit gérer le "." et les espaces, ainsi que les conversions "d", "s" && "p".
+Faire un printf, doit gérer le "." et les espaces, ainsi que les conversions "d", "s" && "x".
