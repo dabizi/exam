@@ -45,11 +45,11 @@ void	ft_hex(int nb)
 	else
 		n = nb;
 	if (n >= 16)
-		ft_int(n / 1);
+		ft_hex(n / 16);
 	if (n < 10)
 		ft_putchar(n % 16 + '0');
 	else
-		ft_putchar(n % 16 + 'a');
+		ft_putchar(n % 16 - 10 + 'a');
 }
 
 int		main(int ac, char **av)
