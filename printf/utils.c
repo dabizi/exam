@@ -33,23 +33,14 @@ void	ft_str(char *s1)
 	}
 }
 
-void	ft_hex(int nb)
+void	ft_hex(unsigned int nb)
 {
-	long n;
-
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		n = -nb;
-	}
-	else
-		n = nb;
-	if (n >= 16)
-		ft_hex(n / 16);
-	if (n < 10)
+	if (nb >= 16)
+		ft_hex(nb / 16);
+	if (nb % 16 < 10)
 		ft_putchar(n % 16 + '0');
 	else
-		ft_putchar(n % 16 - 10 + 'a');
+		ft_putchar(n % 16 + 'W');
 }
 
 int		main(int ac, char **av)
