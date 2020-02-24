@@ -1,0 +1,9 @@
+Algo printf exam
+
+
+For strings : 
+
+if (before > after)
+  add_space(before - after);
+ else
+  no_space;
