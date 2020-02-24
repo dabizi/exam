@@ -7,3 +7,9 @@ if (before > after)
   add_space(before - after);
  else
   no_space;
+
+if (after == 0)
+  if (before < length_string)
+    break;
+  else 
+    add_space(before = length_string)
