@@ -39,7 +39,7 @@ void	ft_hex(unsigned int nb)
 		ft_hex(nb / 16);
 	if (nb % 16 < 10)
 		ft_putchar(n % 16 + '0');
-	else
+	 else
 		ft_putchar(n % 16 + 'W');
 }
 
